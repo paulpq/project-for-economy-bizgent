@@ -25,24 +25,6 @@ const observer = new IntersectionObserver((entries) => {
 const animatedElements = document.querySelectorAll('.animate');
 animatedElements.forEach((el) => observer.observe(el));
 
-// Fade out scroll-down-indicator when hero is not visible
-const heroSection = document.querySelector('.hero-section');
-const scrollDownIndicator = document.querySelector('.scroll-down-indicator');
-if (heroSection && scrollDownIndicator) {
-    const scrollIndicatorObserver = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-                scrollDownIndicator.style.opacity = '0.7';
-                scrollDownIndicator.style.pointerEvents = '';
-            } else {
-                scrollDownIndicator.style.opacity = '0';
-                scrollDownIndicator.style.pointerEvents = 'none';
-            }
-        });
-    }, { threshold: 0.2 });
-    scrollIndicatorObserver.observe(heroSection);
-}
-
 // Back to Top Button
 const backToTopButton = document.querySelector("#back-to-top");
 
