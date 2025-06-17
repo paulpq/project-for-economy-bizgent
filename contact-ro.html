@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Bizgent Solutions</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="nav-logo">
+                <img src="https://via.placeholder.com/150x50/2A6F97/FFFFFF?text=Bizgent" alt="Logo Bizgent"
+                    class="logo-img">
+                Bizgent
+            </a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Acasă</a></li>
+                <li class="nav-item"><a href="services-ro.html" class="nav-link"><i class="fas fa-cogs"></i> Servicii</a></li>
+                <li class="nav-item"><a href="use-cases-ro.html" class="nav-link"><i class="fas fa-lightbulb"></i> Studii de Caz</a></li>
+                <li class="nav-item"><a href="about-ro.html" class="nav-link"><i class="fas fa-info-circle"></i> Despre</a></li>
+                <li class="nav-item"><a href="pricing-ro.html" class="nav-link"><i class="fas fa-tags"></i> Prețuri</a></li>
+                <li class="nav-item"><a href="contact-ro.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+                <li class="nav-item lang-dropdown">
+                    <button class="lang-switcher-btn">
+                        <i class="fas fa-globe"></i> RO
+                    </button>
+                    <div class="lang-dropdown-content">
+                        <a href="contact-ro.html" class="lang-active">Română</a>
+                        <a href="contact-ru.html">Русский</a>
+                        <a href="contact.html">English</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <h2 class="section-title animate fade-in">Contactați-ne</h2>
+            <p class="section-subtitle animate fade-in" style="animation-delay: 0.2s;">Aveți un proiect în minte sau
+                doriți să aflați mai multe? Ne-ar plăcea să vă auzim.</p>
+            <div class="contact-container animate slide-in-up" style="animation-delay: 0.4s;">
+                <form action="#" method="POST" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Numele Dvs." required>
+                        <input type="email" name="email" placeholder="Email-ul Dvs." required>
+                    </div>
+                    <textarea name="message" rows="6" placeholder="Mesajul Dvs." required></textarea>
+                    <button type="submit" class="cta-button">Trimite Mesaj</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+    <div class="social-links">
+        <a href="#" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    </div>
+        <p>&copy; 2025 Bizgent Solutions. Toate Drepturile Rezervate. | <a href="#" class="footer-link">Politica de
+                Confidențialitate</a></p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="lang-fix.js"></script>
+    <a id="back-to-top" aria-label="Înapoi sus"><i class="fas fa-arrow-up"></i></a>
+</body>
+
+</html>
